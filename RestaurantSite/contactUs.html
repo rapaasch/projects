@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+    Name: Rebecca Paasch
+    Date created: 22/7/2019
+    Date last modified: 10 Aug 2019
+-->
+<html>
+<head>
+    <title>Contact the Cornerstone Caf&eacute;</title>
+    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="https://kit.fontawesome.com/d32fd734f7.js"></script>
+    <style>
+      input{
+          margin: 12px;
+        }
+      textarea {
+        height: 200px;
+        width: 50%;
+        margin-top: 12px;
+      }
+      main {
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <noscript>
+    <p>Please enable JavaScript to use this page!</p>
+  </noscript>
+        <h1 class="heading">Cornerstone Caf&eacute;</h1>
+        <nav class="nav nav-tabs">
+            <a class="nav-item nav-link" href="home.html"><i class="fas fa-home"></i></a>
+            <a class="nav-item nav-link" href="menu.html">Menu</a>
+            <a class="nav-item nav-link active" href="contactUs.html">Contact Us</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <form action="contactUs.html" method="POST" name="myForm" onsubmit="return validateForm()">
+            <div class="form-group">
+              <label for="inputName">Name:</label>
+              <input class="form-select" type="text" name="name"> <br>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email:</label>
+              <input class="form-select" type="email" name="email"> <br>
+            </div>
+            <div class="form-group">
+              <label for="inputPhone">Phone:</label>
+              <input class="form-select"type="number" name="phone"> <br>
+            </div>
+            <div class="form-group">
+              <label for="inputReason">Reason for inquiry:</label>
+              <select class="form-select" name="reasonForInquiry">
+                                <option value="catering">Catering</option>
+                                <option value="privateParty">Private Party</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select> <br> </div>
+            <div class="form-group">
+              <label for="inputAdditonalInformation">Additional Information:</label>
+              <textarea class="form-select" name="additionalInformation"></textarea><br></div>
+            <div class="form-check">
+              <label for="inputBeenToRestaurant">Have you been to the restaurant?</label>
+              <input class="form-select" type="radio" name="beenToRestaurant" value="Yes" checked>Yes
+              <input class="form-select" type="radio" name="beenToRestaurant" value="no">No <br></div>
+
+            <div class="form-check">
+              <label for="inputDays">Best days to contact you:</label>
+                            <input type="checkbox" value="monday">M
+                            <input type="checkbox" value="tuesday">T
+                            <input type="checkbox" value="wednesday">W
+                            <input type="checkbox" value="thursday">R
+                            <input type="checkbox" value="friday">F
+                            <br></div>
+            <input type="submit" value="Submit">
+            </form>
+    </main>
+    <footer>
+            <hr>
+            <p>
+                909 Markley Street, Centerville WA 30493
+            </p>
+            <p>
+              440-224-5301
+            </p>
+            <hr>
+    </footer>
+    <script>
+    function validateForm() {
+      var name=document.getElementsByName("name").value;
+      var email=document.getElementsByName("email").value;
+      var phone=document.getElementsByName("phone").value;
+      if (name==null || name=="") {
+        alert("Name must be filled out");
+        return false;
+      } else if (email==null || email=="") {
+        alert("Email must be filled out");
+        return false;
+      }
+       else if(phone==null || phone=="") {
+        alert("Phone number must be filled out");
+        return false;
+      } else {
+        alert("Thank you for filling  out form");
+        return true;
+      }
+
+    }
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+header, footer {
+  text-align: center;
+  background-color: #E55934;
+}
+footer {
+  margin-bottom: 0;
+}
+header {
+  height: 15%;
+}
+.heading {
+  font-family: 'Beth Ellen', cursive;
+  font-size: 3em;
+}
+main {
+  background-color: #F2E86D;
+}
+
+a:hover {
+  font-weight: bold;
+}
+a:visited {
+  color: white;
+}
+a:link {
+  color: black;
+}
+a:active {
+  text-decoration: none;
+}
+#welcome {
+  padding: 10px;
+  text-align: center;
+  background-color: #F2E86D;
+}
+#announcements {
+  transform:scale(0.5,0.5);
+  margin: 5px;
+}
+.jumbotron {
+  padding: 5px;
+  background-color: #C6A15B;
+}
+.carousel-caption {
+  background-color: #E55934;
+  padding: 3px;
+}
